@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP.Top</title>
+    <link rel="stylesheet" type="text/css" href="css/design.css" media="screen" />
+</head>
+
+<body>
+    <div id="app" class="calculator">
+        <header>
+            <h1>TIP.Top</h1>
+            <h2>Your convenient tip calculator</h2>
+        </header>
+        <form id="calculation_form">
+            <div class="center">
+                <div id="container-calc" class="calculation">
+                    <div id="bill">
+                        <label>Enter the total of your bill</label>
+                        <input type="text" id="price" placeholder="$" required>
+                    </div>
+                    <!--end of bill-->
+                    <div id="group">
+                        <label>Enter the number of people in your group</label>
+                        <input type="text" id="number" placeholder="number" required>
+                    </div>
+                    <!--end of group-->
+                    <p>How much will you tip?</p>
+                    <p>Choose an option</p>
+                    <div class="radio-toolbar">
+                        <input type="radio" id="option1" name="service" value="5"><label for="option1">5%</label>
+                        <input type="radio" id="option2" name="service" value="10"><label for="option2">10%</label>
+                        <input type="radio" id="option3" name="service" value="15"><label for="option3">15%</label>
+                        <input type="radio" id="option4" name="service" value="20"><label for="option4">20%</label>
+                    </div>
+                    <!--end of radio-toolbar-->
+                    <br>
+                    <button type="button" onclick="calc_tip()" class="btn">Submit</button>
+                </div>
+                <!--end of calculation-->
+                <footer>
+                    <div id="container-result" class="result">
+                        <br>
+                        <p>Your bill with added tip is...</p>
+                        <p id="divided-bill"> </p>
+                </footer>
+            </div>
+            <!--end of result-->
+    </div>
+    <!--end of center-->
+    </div>
+    <!--end of calculator-->
+    </form>
+    <!--Javascript goes after the page-->
+    <script src="js/main.js"></script>
+</body>
+
+<body>
+
+</body>
+
+</html>
